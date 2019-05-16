@@ -7,73 +7,61 @@
 </head>
 
 <body>
-  <div class="main-container">
-    <header class="sedona-header">
-      <nav class="sedona-navigation">
-        <a class="main-header-logo">
-          <img src="*img/index-logo.svg*" alt="Логотип Седона">
-        </a>
-        <ul class="nav-list">
-          <li class="main-nav item-left"><a href="index.html" class="active">Информация</a></li>
-          <li class="main-nav item-left"><a href="#">Фото и видео</a></li>
-          <li class="main-nav item-right"><a href="#">Карта штата</a></li>
-          <li class="main-nav item-right"><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="sedona-intro">
-      <h1 class="header-description">Седона небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="intro-description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-    </section>
+  <header class="sedona-header">
+    <nav class="sedona-navigation">
+      <a class="main-header-logo">
+        <img src="img/index-logo.svg" alt="Логотип Седона">
+      </a>
+      <ul class="nav-list">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="Photo.and.Video">Фото и видео</a></li>
+        <li><a href="State.map">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="sedona-intro">
+    <h1 class="header-description">Седона небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <p class="intro-description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+  </section>
+  <p>Заинтересовались?</p>
+  <p>Укажите предполагаемые даты поездки,<br>
+    и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  <form class="search-form" method="get">
+    <div class="date-wrapper">
+      <label for="date-arrival">Дата заезда:</label>
+      <input type="text" id="date-arrival" name="date-arrval" value="24 апреля 2016">
+    </div>
+    <div class="date-wrapper">
+      <label for="date-depart">Дата выезда:</label>
+      <input type="text" id="date-depart" name="date-depart" value="4 июля 2016">
+    </div>
+    <div class="people-wrapper">
+      <div class="adults-wrapper">
+        <label for="adults-amount">Взрослые:</label>
+        <div class="counter">
+          <input type="text" id="adults-amount" name="adults-amount" value="2">
+        </div>
+      </div>
+      <label for="childrens-amount">Дети:</label>
+      <div class="counter">
+        <input type="text" id="childrens-amount" name="adults-amount" value="2">
+      </div>
+    </div>
+    <input type="submit" class="submit-search-btn" name="submit-search-btn" value="Найти">
+  </form>
+  <div class="footer-tag">
+    <p>#Visitsedona</p>
   </div>
-    <p>Заинтересовались?</p>
-    <p>Укажите предполагаемые даты поездки,<br>
-      и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <form class="search-form" method="get">
-      <div class="date-wrapper">
-        <label for="date-arrival">Дата заезда:</label>
-        <input type="text" id="date-arrival" name="date-arrval" value="24 апреля 2016">
-        <div class="btn-calendar"></div>
-      </div>
-      <div class="date-wrapper">
-        <label for="date-depart">Дата выезда:</label>
-        <input type="text" id="date-depart" name="date-depart" value="4 июля 2016">
-        <div class="btn-calendar"></div>
-      </div>
-      <div class="people-wrapper">
-        <div class="adults-wrapper">
-          <label for="adults-amount">Взрослые:</label>
-          <div class="counter">
-            <div class="btn-minus"></div>
-            <input type="text" id="adults-amount" name="adults-amount" value="2">
-            <div class="btn-plus"></div>
-          </div>
-        </div>
-        <div class="childrens-wrapper">
-          <label for="childrens-amount">Дети:</label>
-          <div class="counter">
-            <div class="btn-minus"></div>
-            <input type="text" id="childrens-amount" name="adults-amount" value="2">
-            <div class="btn-plus"></div>
-          </div>
-        </div>
-      </div>
-      <input type="submit" class="submit-search-btn" name="submit-search-btn" value="Найти">
-    </form>
-    <footer class="sedona-footer">
-      <div class="footer-tag">
-        <p>#Visitsedona</p>
-      </div>
-      <div class="footer-social">
-        <a class="social-box icon-twitter" href="#"></a>
-        <a class="social-box icon-facebook" href="#"></a>
-        <a class="social-box icon-youtube" href="#"></a>
-      </div>
-      <div class="footer-copyright">
-        <p>webcite</p>
-        <a class="copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-      </div>
-    </footer>
+  <div class="footer-social">
+    <a class="social-box icon-twitter" href="#"></a>
+    <a class="social-box icon-facebook" href="#"></a>
+    <a class="social-box icon-youtube" href="#"></a>
+  </div>
+  <div class="footer-copyright">
+    <p>webcite</p>
+    <a class="copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+  </div>
 </body>
 
 </html>
