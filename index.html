@@ -18,60 +18,99 @@
         <li><a href="State.map">Карта штата</a></li>
         <li class="site-navigation-current"><a href="inner.html.">Гостиницы</a></li>
       </ul>
+      <div class="index-logo">
+        <img src="img/index-logo.jpg" alt="Welcome to Sedona">
+      </div>
     </nav>
   </header>
-    <section class="sedona-intro">
-      <h1 class="header-description">Седона небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="intro-description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-    </section>
-    <p>Заинтересовались?</p>
-    <p>Укажите предполагаемые даты поездки,<br>
-      и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <form class="search-form" method="get">
-      <div class="date-wrapper">
-        <label for="date-arrival">Дата заезда:</label>
-        <input type="text" id="date-arrival" name="date-arrval" value="24 апреля 2016">
-        <div class="btn-calendar"></div>
-      </div>
-      <div class="date-wrapper">
-        <label for="date-depart">Дата выезда:</label>
-        <input type="text" id="date-depart" name="date-depart" value="4 июля 2016">
-        <div class="btn-calendar"></div>
-      </div>
-      <div class="people-wrapper">
-        <div class="adults-wrapper">
-          <label for="adults-amount">Взрослые:</label>
-          <div class="counter">
-            <div class="btn-minus"></div>
-            <input type="text" id="adults-amount" name="adults-amount" value="2">
-            <div class="btn-plus"></div>
+  <section class="sedona-intro">
+    <h1 class="header-description">Седона небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <p class="intro-description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+  </section>
+  <section class="index-content">
+    <div class="house1">
+      <img src="img/house1.jpg" alt="Дом">
+    </div>
+    <b class="index-title">Настоящий<br>городок</b>
+    <span class="index-number">№1</span>
+    <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+    <img src="img/house.png" alt="Иконка дома">
+    <h2>Жилье</h2>
+    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    <img src="img/burger.png" alt="Иконка бургера">
+    <h2>Еда</h2>
+    <p>Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+    <img src="img/gift.png" alt="Иконка сувенира">
+    <h2>Сувениры</h2>
+    <p>Не только китайского,<br>но иместного производства!</p>
+    <div class="mountains">
+    <img src="img/mountains.jpg" alt="Горы">
+  </div>
+    <b class="index-content-reason-title">Там есть<br>мост дьявола</b>
+    <span class="index-content-reason-number">- №2 -</span>
+    <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+    <b class="index-title">Небольшая<br>площадь</b>
+    <span class="index-content-reason-number">- №3 -</span>
+    <p>Все достопримеча тельности находятся очень близко</p>
+    <b class="index-title">Красивая<br>дорога</b>
+    <span class="index-number"> №4 </span>
+    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+    <b class="index-title">Мало<br>туристов</b>
+    <span class="index-number">- №5 -</span>
+    <p>Большинство едет в Гранд Каньон и толпится там</p>
+  </section>
+  <div class="index-search">
+    <b class="index-search-title">Заинтересовались?</b>
+    <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <a class="btn btn-hotels-search btn-brown" href="#">Поиск гостиницы в Седоне</a>
+    <form class="index-search-hotels" action="https://echo.htmlacademy.ru" method="get">
+      <div class="form-table">
+        <div class="form-row">
+          <label class="form-cell" for="date-on">Дата заезда:</label>
+          <div class="form-cell date-field">
+            <input type="text" id="date-on" name="date-on" value="24 Апреля 2016">
           </div>
         </div>
-        <div class="childrens-wrapper">
-          <label for="childrens-amount">Дети:</label>
-          <div class="counter">
-            <div class="btn-minus"></div>
-            <input type="text" id="childrens-amount" name="adults-amount" value="2">
-            <div class="btn-plus"></div>
+        <div class="form-row">
+          <label class="form-cell" for="date-off">Дата выезда:</label>
+          <div class="form-cell date-field">
+            <input type="text" id="date-off" name="date-off" value="4 июля 2016">
           </div>
         </div>
       </div>
-      <input type="submit" class="submit-search-btn" name="submit-search-btn" value="Найти">
+      <div class="form-table single-row-table">
+        <div class="form-row form-row-4">
+          <label class="form-cell" for="adult-count">Взрослые:</label>
+          <div class="form-cell">
+            <div class="icon-minus btn-count"></div>
+            <input class="count-field" type="text" id="adult-count" name="adult-count" value="2">
+            <div class="icon-plus btn-count"></div>
+          </div>
+          <label class="form-cell" for="kids-count">Дети:</label>
+          <div class="form-cell">
+            <div class="icon-minus btn-count"></div>
+            <input class="count-field" type="text" id="kids-count" name="kids-count" value="0">
+            <div class="icon-plus btn-count"></div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-blue btn-hotels-search-form" type="submit">Найти</button>
     </form>
-    <footer class="sedona-footer">
-      <div class="footer-tag">
-        <p>#Visitsedona</p>
-      </div>
-      <div class="footer-social">
-        <a class="social-box icon-twitter" href="#"></a>
-        <a class="social-box icon-facebook" href="#"></a>
-        <a class="social-box icon-youtube" href="#"></a>
-      </div>
-      <div class="footer-copyright">
-        <p>webcite</p>
-        <a class="copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-      </div>
-    </footer>
+  </div>
+  <footer class="sedona-footer">
+    <div class="footer-tag">
+      <p>Visitsedona</p>
+    </div>
+    <div class="footer-social">
+      <a class="social-box icon-twitter" href="#"></a>
+      <a class="social-box icon-facebook" href="#"></a>
+      <a class="social-box icon-youtube" href="#"></a>
+    </div>
+    <div class="footer-copyright">
+      <p>website</p>
+      <a class="copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+    </div>
+  </footer>
 </body>
 
 </html>
